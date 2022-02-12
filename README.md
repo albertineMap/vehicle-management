@@ -1,20 +1,20 @@
-## Installation
+### Installation
 Clone the repository and install the dependency
+-   in your terminal do :
 
 ```bash
-- cd vehicle-management
-- git init
-- git clone https://github.com/albertineMap/vehicle-management.git
-- cp .env.example .env
-- composer install
-- php artisan key:generate
-- npm install
+git init
+git clone https://github.com/albertineMap/vehicle-management.git
+cd vehicle-management
+cp .env.example .env
+composer install
+php artisan key:generate
+npm install
 ```
 
-Then create the necessary database.
 
-**Database** 
 
+### Database
    - Create new database vehicles in phpmyAdmin
    - Set database information .env file
         - DB_CONNECTION=mysql
@@ -30,9 +30,7 @@ And run the initial migration
 php artisan migrate 
 ```
  
-**Run application**
-
- To run the application
+### Run application
  
  ```bash
  composer install
@@ -40,13 +38,13 @@ php artisan migrate
  npm run watch
  ```
  
-**To run test**
 
-## Tests
+
+### Tests
 #### if you are not connected you are redirect to login page
 -   you can try this route to test 
 -   http://localhost:8000/create or http://localhost:8000/user/list
-### Tests for wrong data are not functional
+#### Tests for wrong data are not functional
     -Validation works
     -Error redirection too
     -But error display does not work
